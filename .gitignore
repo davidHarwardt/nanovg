@@ -26,3 +26,8 @@ build/*
 
 ## xcode specific
 *xcuserdata*
+
+## zig build
+zig-out/
+.zig-cache/
+
