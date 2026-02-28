@@ -5,8 +5,6 @@ pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
 
-
-
     const nanovg_module = b.addModule("nanovg", .{
         .target = target,
         .optimize = optimize,
