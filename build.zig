@@ -26,6 +26,7 @@ pub fn build(b: *std.Build) void {
         .root_module = nanovg_module,
         .linkage = .static,
     });
+    lib_nanovg.installHeadersDirectory(b.path("src"), "", .{});
 
     b.installArtifact(lib_nanovg);
 }
